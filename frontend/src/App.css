@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.contentDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin: 20px 0;
+  
+}
+
+.btns button{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 0.5px solid black;
+  font-size: 20px;
+}
+
+.contentVideo{
+  width: 600px;
+  height: 400px;
+  background-color: red;
+}
+
