@@ -4,7 +4,9 @@ const Video = () => {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
 
-  const host = "http://localhost:9000";
+  // const host = "http://localhost:9000";
+  const host = "https://task29-topaz.vercel.app";
+
 
   const handleVideo1 = () => {
     setShow1(!show1);

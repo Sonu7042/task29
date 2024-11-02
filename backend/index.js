@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 
 app.get("/video1", (req, res) => {
-  const pathFile = path.join(__dirname, "./Public/video1.mp4");
+  const pathFile = path.join(__dirname, "public", "video1.mp4");
   const stat = fs.statSync(pathFile);
   const fileSize = stat.size;
 
@@ -23,6 +23,8 @@ app.get("/video1", (req, res) => {
   if (!range) {
     return res.status(400).send("range is required");
   }
+
+
 
   const chunkSize = 10 ** 6; // 1 MB
   const start = Number(range.replace(/\D/g, ""));
@@ -46,7 +48,8 @@ app.get("/video1", (req, res) => {
 
 
 app.get("/video2", (req, res) => {
-  const pathFile = path.join(__dirname, "./Public/video2.mp4");
+  const pathFile = path.join(__dirname, "public",  "video2.mp4");
+
   const stat = fs.statSync(pathFile);
   const fileSize = stat.size;
 
